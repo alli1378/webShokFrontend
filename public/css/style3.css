@@ -1,0 +1,139 @@
+.article-card img{
+    border-radius: 6% 6% 0% 0%;
+    height: 40vh;
+    width: 38vh;
+    /* border-radius: rgb(219, 216, 216) solid  ; */
+}
+.article-card:hover img{
+    opacity: 35% ;
+    
+
+}
+
+.article-card p{
+    /* background: #605c3c; */
+    width: 90%;
+    margin-right: .6rem;
+    margin-top: -17rem;
+    visibility: hidden; 
+    /* direction: initial; */
+    display: flex;
+    align-items: center;
+}
+.article-card:hover p {
+    visibility: visible;
+    
+    color: #605c3c;
+    
+}
+.article-card:hover{
+    transform: translate(0%,-3%) ;
+}
+.article-card .article-button{
+    width: 38vh;
+    display: flex; 
+    justify-content:center;
+    /* margin-top: -7vh; */
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to left , #3c3b3f, #605c3c);
+    
+        
+    border: none;
+    height: 2.5rem;
+    /* border-radius: 0% 0% 11% 11%; */
+    
+}
+.article-card-graid{
+margin-bottom: 5rem;
+}
+@media (max-width: 800px) {
+    .article-card{
+        width: 20rem;
+    }
+    .article-card-graid{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .article-card{
+        
+        display: inline-block;
+        border-radius: 5%;
+        background: rgb(236, 234, 234);
+    }
+    .article-card .article-button{
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+    .article-card:hover{
+        transform: translate(0%,-0%) ;
+    }
+    .article-card p{
+        width: 90%;
+        margin-right: 1rem;
+        margin-top: 0rem;
+        visibility: visible;
+        color: #605c3c;
+    }
+    .article-card img{
+        border-radius: 5% 5% 0  0;
+        height: 40vh;
+        width: 100%;
+        
+    }
+    .article-card:hover img{
+    opacity: 100%;
+    }
+}
+@media (max-width: 665px) {
+    .article-card .article-button{
+        width: 100%;
+        
+    }  
+    .article-card-graid{
+        width: 98%;
+        height: 100%;
+    }
+    .article-card img{
+        /* width: 100%; */
+        height: 50%;
+
+    }  
+    
+}
+@media (max-height: 665px) {
+    .article-card .article-button{
+        width: 100%;
+        
+    }  
+    /* .article-card-graid{
+        width: 98%;
+        height: 100%;
+    } */
+    .article-card img{
+        /* width: 100%; */
+        height: 55vh;
+
+    }  
+    
+}
+
+@media (min-width: 1200px){
+    .article-card img{
+       
+        width: 100%;
+        
+    }
+    .article-card-graid{
+        margin-right: 1rem;
+    }
+    .article-card p{
+        max-width: 100%;
+        /* margin-right: .5rem; */
+        /* width: 90%; */
+    }
+    .article-card .article-button{
+        width: 100%;
+    }
+}
